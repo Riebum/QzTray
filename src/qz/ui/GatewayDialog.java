@@ -86,7 +86,7 @@ public class GatewayDialog extends JDialog implements Themeable {
         bottomPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 5));
         persistentCheckBox = new JCheckBox(Constants.REMEMBER_THIS_DECISION, false);
         persistentCheckBox.setMnemonic(KeyEvent.VK_R);
-        persistentCheckBox.addActionListener(e -> allowButton.setEnabled(!persistentCheckBox.isSelected() || request.isVerified()));
+        persistentCheckBox.addActionListener(e -> allowButton.setEnabled(true));
         persistentCheckBox.setAlignmentX(RIGHT_ALIGNMENT);
 
         bottomPanel.add(certInfoLabel);
